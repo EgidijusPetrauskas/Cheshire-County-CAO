@@ -1,0 +1,44 @@
+.section-2 {
+    font-family: Montserrat;
+    background: #FFFFFF;
+
+    .section-2-container {
+        @include container;
+        height: 110px;
+
+        @include flex-prefix;
+        justify-content: space-between;
+        align-items: center;
+
+        .social-media {
+            h5 {
+                font-size: 20px;
+                color: #333333;
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+                margin-top: 5px;
+                max-width: 80%;
+                font-size: 14px;
+                color: #86878B;
+                line-height: 20px;
+            }
+        }
+
+        .social-icons {
+            width: 55%;
+
+            @include flex-prefix;
+            justify-content: flex-end;
+            align-self: center;
+
+            img{
+                height: 30px;
+                margin-left: 18%;
+                margin-right: 2px;
+            }
+        }
+    }
+}

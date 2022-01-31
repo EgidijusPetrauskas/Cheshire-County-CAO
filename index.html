@@ -9,14 +9,139 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
     <!-- Cusom CSS -->
     <link rel="stylesheet" href="app/css/style.css">
     <!-- Custom JS -->
     <script src="script.js" defer></script>
-    
+    <!-- Swiper JS -->
+    <script src="swiper.js" defer></script>
+    <!-- Title -->
     <title>Cheshire County</title>
 <body>
+    <!-- Navigation MENU -->
+    <nav id="navigation">
+        <div class="nav-container">
+            <img src="./app/img/cheshire-county-hygiene-services.svg" alt="logo">
+            <div class="navigation-links">
+                <a href="#">Features</a>
+                <a href="#">About</a>
+                <a href="#">Pricing</a>
+                <a href="#">Reviews</a>
+                <a href="#">Contacts</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION 1 -->
+        <section class="section-1">
+            <div class="section-1-container">
+                <!-- LEFT SIDE -->
+                <article>
+                    <img class="logo-section" src="./app/img/cheshire-county-hygiene-services.svg" alt="logo">
+                    <h3>Explained propriety of out perpetual to you</h3>
+                    <img id="devider-img" src="./app/img/devider/divider_white_u72.png" alt="">
+                    <p>Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor.
+                        Explained propriety of out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated
+                        astonished is.</p>
+                    <a href="#">Download</a>
+                </article>
+                <!-- RIGHT SIDE -->
+                <form>
+                    <h4>Try Your <span>free</span> Trial Today</h4>
+                    <div class="details">
+                        <h5>Your details</h5>
+                        <input type="text" placeholder="First name" required>
+                        <input type="text" placeholder="Last name" required>
+                        <input type="number" placeholder="Phone number" required>
+                    </div>
+                    <div class="ratio-container">
+                        <h5>Type of subscription</h5>
+                        <div class="radio-sub">
+                            <input type="radio" name="sub" id="monthly">
+                            <label for="monthly">monthly</label>
+                            <input type="radio" name="sub" id="yearly">
+                            <label for="yearly">yearly</label>
+                        </div>
+                    </div>
+                    <button>Get started</button>
+                </form>
+            </div>
+        </section>
+        <!-- SECTION 2 -->
+        <section class="section-2">
+            <div class="section-2-container">
+                <div class="social-media">
+                    <h5>Social Media</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                </div>
+                <div class="social-icons">
+                    <img src="app/img/facebook-logo.png" alt="fb">
+                    <img src="app/img/instagram-logo.png" alt="inst">
+                    <img src="app/img/twitter.png" alt="twit">
+                    <img src="app/img/pinterest.png" alt="pint">
+                    <img src="app/img/WIFI_icon.svg" alt="wifi">
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 3 -->
+        <section class="section-3">
+            <div class="section-3-container">
+                <div class="swiper-buttons">
+                    <button index="1"><span>Register</span></button>
+                    <button index="2"><span>Apply</span></button>
+                    <button index="3"><span>Receive</span></button>
+                </div>
+                <!-- Swiper -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <h3>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                            amet
+                            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis
+                            dis
+                            parturient montes. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        </div>
+                            <div class="swiper-slide">
+                            <h3>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                            amet
+                            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis
+                            dis
+                            parturient montes. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p></div>
+                            <div class="swiper-slide">
+                            <h3>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
+                            amet
+                            lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis
+                            dis
+                            parturient montes. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p></div>
+                    </div>
+                </div>
+                <div class="section-3-imgs">
+                    <img src="app/img/photo-1493409137604-0901c55e4456.png" alt="cabage">
+                    <img src="app/img/photo-1543364195-bfe6e4932397.png" alt="veg">
+                    <img src="app/img/photo-1448387473223-5c37445527e7.png" alt="step">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
+

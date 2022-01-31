@@ -1,3 +1,7 @@
-body {
-  background:blue;
-}
+@import "varAndMixins";
+@import "general";
+@import "heading";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "footer";

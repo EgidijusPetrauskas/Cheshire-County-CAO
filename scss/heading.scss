@@ -1,0 +1,48 @@
+#navigation {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top: 0;
+
+    z-index: 1;
+
+    width: 100%;
+    height: 72px;
+
+    background: #1C1C1C;
+
+    .nav-container {
+        @include container;
+
+        @include flex-prefix;
+        justify-content: space-between;
+        align-items: center;
+
+    
+
+        img {
+            padding: 10px 0;
+        }
+
+        .navigation-links {
+            height: 72px;
+
+            @include flex-prefix;
+            justify-content: space-around;
+            align-items: center;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                text-transform: uppercase;
+                
+                margin: 0 20px;
+                font-size: 14px;
+                font-family: Montserrat;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@mixin flex-prefix {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin container {
+    width: 84%;
+    margin: 0 auto;
+}
+
+@mixin bg-img-atr {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
