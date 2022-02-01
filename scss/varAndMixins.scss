@@ -14,3 +14,8 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+@mixin font14-20 {
+    font-size: 14px;
+    line-height: 20px;
+}
