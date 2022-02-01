@@ -1,0 +1,99 @@
+.section-6{
+    height: 750px;
+    width: 100%;
+    
+    color: #FFFF;
+    padding: 50px 0;
+    background: #6696E2;
+
+    p {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .section-6-container{
+        @include container;
+        @include flex-prefix;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+
+        .section-6-top{
+            text-align: center;
+            margin-bottom: 60px;
+
+            h4 {
+                font-size: 36px;
+                line-height: 43px;
+                margin-bottom: 25px;
+            }
+
+            p{
+                margin-top: 25px;
+                @include font14-20;
+            }
+
+        }
+        .section-6-bottom{
+            @include flex-prefix;
+            justify-content: space-around;
+
+            width: 80%;
+
+            article {
+                width: 30%;
+
+                border-radius: 5px;
+                overflow: hidden;
+
+                text-align: center;
+
+                .article-top{
+                    background: #333333;
+                    border-radius: 5px 5px 0 0;
+
+                    p {
+                        padding-top: 0;
+                        opacity: 0.5;
+                    }
+
+                    h5{
+                        margin: 0;
+                        padding: 15px 0;
+                        font-size: 20px;
+                        line-height: 24px;
+                        font-weight: 500;
+                    }
+
+                    h2 {
+                        margin: 0;
+                        margin: 40px 0;
+                        font-size: 94px;
+                        line-height: 24px;
+                        font-weight: normal;
+
+                        span{
+                            font-size: 40px;
+                        }
+                    }
+
+                }
+                .article-mid{
+                    background: #41D395;
+                    height: 8px;
+
+                }
+                .article-bottom{
+                    background: #FFFF;
+                    
+                    p{
+                        color: #86878B;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

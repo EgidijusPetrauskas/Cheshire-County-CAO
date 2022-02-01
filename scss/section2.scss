@@ -1,5 +1,4 @@
 .section-2 {
-    font-family: Montserrat;
     background: #FFFFFF;
 
     .section-2-container {
@@ -21,9 +20,8 @@
                 margin: 0;
                 margin-top: 5px;
                 max-width: 80%;
-                font-size: 14px;
                 color: #86878B;
-                line-height: 20px;
+                @include font14-20;
             }
         }
 

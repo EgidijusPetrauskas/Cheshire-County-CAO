@@ -16,8 +16,7 @@
 
             p {
                 color: #FFFFFF;
-                font-size: 14px;
-                line-height: 20px;
+                @include font14-20;
             }
         }
     }
@@ -34,7 +33,6 @@
     align-items: center;
 
     padding: 50px 0;
-    font-family: Montserrat;
 
     &::before {
         position: absolute;
