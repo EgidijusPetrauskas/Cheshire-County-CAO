@@ -4,6 +4,8 @@ const swiper = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    slidesPerView: 1,
+    spaceBetween: 40,
 });
 
 const swiper2 = new Swiper('.swiper2', {
@@ -11,6 +13,7 @@ const swiper2 = new Swiper('.swiper2', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
+    spaceBetween: 60,
 
     // If we need pagination
     pagination: {

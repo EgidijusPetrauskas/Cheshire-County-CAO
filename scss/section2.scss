@@ -10,6 +10,11 @@
         align-items: center;
 
         .social-media {
+
+            &:hover{
+                cursor: default;
+            }
+            
             h5 {
                 font-size: 20px;
                 color: #333333;
@@ -31,11 +36,22 @@
             @include flex-prefix;
             justify-content: flex-end;
             align-self: center;
-
-            img{
+            
+            a{
                 height: 30px;
                 margin-left: 18%;
                 margin-right: 2px;
+
+                &:hover img{
+                    transform: scale(1.5) rotate(360deg);
+                    
+                }
+
+                img{
+                    height: 30px;
+
+                    transition: 0.4s;
+                }
             }
         }
     }

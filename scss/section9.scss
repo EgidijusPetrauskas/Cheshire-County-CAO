@@ -17,10 +17,14 @@
             justify-content: flex-end;
             align-self: center;
 
-            img{
-                height: 20px;
+            a{
+                height: 30px;
                 margin-left: 18%;
                 margin-right: 2px;
+
+                img{
+                    height: 30px;
+                }
             }
         }
 

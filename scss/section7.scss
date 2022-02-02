@@ -22,7 +22,7 @@
 
         .section-7-bottom{
             .swiper{
-                max-width: 1000px;
+                width: 950px;
                 height: 350px;
 
                 .swiper-wrapper {
@@ -46,10 +46,31 @@
                                 background: url("/app/img/u229.png");
                                 @include bg-img-atr;
 
+                                position: relative;
+
                                 margin-bottom: 30px;
                                 border-radius: 8px;
                                 padding: 4px;
                                 padding-left: 15px;
+
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    bottom: -8%;
+                                    left: 5%;
+                                    width: 0;
+                                    height: 0;
+                                    border: 18px solid transparent;
+                                    border-bottom: 0;
+                                    border-top: 24px solid #6696E2;
+                                }
+
+                                p{
+                                    color: #FFFF;
+                                    &:hover{
+                                        cursor: default;
+                                    }
+                                }
                             }
 
                             .review-bottom {

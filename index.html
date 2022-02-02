@@ -5,36 +5,27 @@
     <!-- ViewPort -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-
     <!-- Normalizer -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!-- Swiper JS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
     <!-- Custom Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
-
     <!-- Cusom CSS -->
     <link rel="stylesheet" href="app/css/style.css">
-
     <!-- Custom JS -->
     <script src="script.js" defer></script>
-
     <!-- Swiper JS -->
     <script src="swiper.js" defer></script>
-
     <!-- Title -->
     <title>Cheshire County</title>
-    
 </head>
 <body>
     <!-- Navigation MENU -->
@@ -66,20 +57,20 @@
                     <a href="#">Download</a>
                 </article>
                 <!-- RIGHT SIDE -->
-                <form>
+                <form action="#">
                     <h4>Try Your <span>free</span> Trial Today</h4>
                     <div class="details">
                         <h5>Your details</h5>
-                        <input type="text" placeholder="First name" required>
-                        <input type="text" placeholder="Last name" required>
-                        <input type="number" placeholder="Phone number" required>
+                        <input type="text" placeholder="First name" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('You Must Enter Your Name')" required>
+                        <input type="text" placeholder="Last name" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('You Must Enter Your Last Name')" required>
+                        <input type="number" placeholder="Phone number" oninput="this.setCustomValidity('')" oninvalid="this.setCustomValidity('You Must Enter Your Phone Number')" required>
                     </div>
                     <div class="ratio-container">
                         <h5>Type of subscription</h5>
                         <div class="radio-sub">
-                            <input type="radio" name="sub" id="monthly">
+                            <input type="radio" name="sub" id="monthly" required>
                             <label for="monthly">monthly</label>
-                            <input type="radio" name="sub" id="yearly">
+                            <input type="radio" name="sub" id="yearly" required>
                             <label for="yearly">yearly</label>
                         </div>
                     </div>
@@ -95,11 +86,11 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                 </div>
                 <div class="social-icons">
-                    <img src="app/img/facebook-logo.png" alt="fb">
-                    <img src="app/img/instagram-logo.png" alt="inst">
-                    <img src="app/img/twitter.png" alt="twit">
-                    <img src="app/img/pinterest.png" alt="pint">
-                    <img src="app/img/WIFI_icon.svg" alt="wifi">
+                    <a href="#"><img src="app/img/facebook-logo.png" alt="fb"></a>
+                    <a href="#"><img src="app/img/instagram-logo.png" alt="inst"></a>
+                    <a href="#"><img src="app/img/twitter.png" alt="twit"></a>
+                    <a href="#"><img src="app/img/pinterest.png" alt="pint"></a>
+                    <a href="#"><img src="app/img/WIFI_icon.svg" alt="wifi"></a>
                 </div>
             </div>
         </section>
@@ -387,11 +378,11 @@
         <section class="section-9">
             <div class="section-9-container">
                 <div class="social-icons">
-                    <img src="app/img/facebook-logo.png" alt="fb">
-                    <img src="app/img/instagram-logo.png" alt="inst">
-                    <img src="app/img/twitter.png" alt="twit">
-                    <img src="app/img/pinterest.png" alt="pint">
-                    <img src="app/img/WIFI_icon.svg" alt="wifi">
+                    <a href="#"><img src="app/img/facebook-logo.png" alt="fb"></a>
+                    <a href="#"><img src="app/img/instagram-logo.png" alt="inst"></a>
+                    <a href="#"><img src="app/img/twitter.png" alt="twit"></a>
+                    <a href="#"><img src="app/img/pinterest.png" alt="pint"></a>
+                    <a href="#"><img src="app/img/WIFI_icon.svg" alt="wifi"></a>
                 </div>
                 <div class="copyright">
                     <p>© 2019 Cheshire County</p>

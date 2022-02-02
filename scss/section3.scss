@@ -1,22 +1,28 @@
-.swiper {
-    position: relative;
-    width: 50%;
-    height: 100%;
+.section-3{
+    .swiper {
+        position: relative;
+        width: 50%;
+        height: 100%;
 
-    .swiper-wrapper {
-        .swiper-slide {
-            @include flex-prefix;
-            flex-direction: column;
-            h3 {
-                max-height: 110px;
-                color: #FFFFFF;
-                font-size: 36px;
-                line-height: 40px;
-            }
+        &:hover{
+            cursor: default;
+        }
 
-            p {
-                color: #FFFFFF;
-                @include font14-20;
+        .swiper-wrapper {
+            .swiper-slide {
+                @include flex-prefix;
+                flex-direction: column;
+                h3 {
+                    max-height: 110px;
+                    color: #FFFFFF;
+                    font-size: 36px;
+                    line-height: 40px;
+                }
+
+                p {
+                    color: #FFFFFF;
+                    @include font14-20;
+                }
             }
         }
     }
@@ -79,6 +85,8 @@
                     text-transform: uppercase;
                     color: #FFFFFF;
                     font-size: 14px;
+                    -webkit-transform: rotate(315deg);
+                    -ms-transform: rotate(315deg);
                     transform: rotate(315deg);
                 }
             }
@@ -92,3 +100,4 @@
         }
     }
 }
+
