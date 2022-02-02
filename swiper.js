@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper1', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
-    spaceBetween: 40,
+    spaceBetween: 100,
     speed: 5000,
 });
 
