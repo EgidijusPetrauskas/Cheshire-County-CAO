@@ -3,7 +3,7 @@
 
     padding: 20px 0;
 
-    background: #E27866;
+    background: $my-orange;
 
     .section-8-container{
         @include container;
@@ -73,7 +73,7 @@
 
                         margin: 0;
                         margin-right: 3px;
-                        border: 1px solid #41D395;
+                        border: 1px solid $my-green;
                         border-radius: 100%;
 
                         &::before{
@@ -84,7 +84,7 @@
                             width: 14px;
                             transform: scale(0);
                             height: 14px;
-                            background: #41D395;
+                            background: $my-green;
                             border-radius: 100%;
 
                             transition: 0.2s;
@@ -94,10 +94,16 @@
                             &:checked::before{
                                 transform: scale(0.6);
                             }
+                        }
 
-                            &:checked {
-                                opacity: 1;
-                            }
+                        #personal:checked ~ #personal-label{
+                            opacity: 1;
+                            font-weight: 600;
+                        }
+
+                        #company:checked ~ #company-label{
+                            opacity: 1;
+                            font-weight: 600;
                         }
 
                     label{
@@ -115,7 +121,7 @@
                     margin-top: 40px;
 
                     border: none;
-                    background: #41D395;
+                    background: $my-green;
                     border-radius: 5px;
                     color: #FFFFFF;
                     font-size: 15px;

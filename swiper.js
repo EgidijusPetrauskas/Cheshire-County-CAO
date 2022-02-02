@@ -6,6 +6,7 @@ const swiper = new Swiper('.swiper1', {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 40,
+    speed: 5000,
 });
 
 const swiper2 = new Swiper('.swiper2', {

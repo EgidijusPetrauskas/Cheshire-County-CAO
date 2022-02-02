@@ -26,12 +26,12 @@
                 height: 350px;
 
                 .swiper-pagination-bullet-active {
-                    background-color: #E27866 !important;
-                    border: 4px solid #E27866;
+                    background-color: $my-orange !important;
+                    border: 4px solid $my-orange;
                 }
 
                 .swiper-pagination-bullet {
-                    border: 2px solid #E27866;
+                    border: 2px solid $my-orange;
                     background: #FFFF;
                     margin-right: 10px;
                 }
@@ -73,14 +73,14 @@
                                     height: 0;
                                     border: 18px solid transparent;
                                     border-bottom: 0;
-                                    border-top: 24px solid #6696E2;
+                                    border-top: 24px solid $my-blue;
                                 }
 
                                 p{
                                     color: #FFFF;
-                                    &:hover{
+                                     &:hover{
                                         cursor: default;
-                                    }
+                                        }
                                 }
                             }
 

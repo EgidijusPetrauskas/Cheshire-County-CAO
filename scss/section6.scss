@@ -4,7 +4,7 @@
     
     color: #FFFF;
     padding: 50px 0;
-    background: #6696E2;
+    background: $my-blue;
 
     p {
         margin: 0;
@@ -54,7 +54,7 @@
                 }
 
                 &:hover .article-top h2{
-                    color: #41D395;
+                    color: $my-green;
                 }
 
                 &:hover .article-top p{
@@ -101,7 +101,7 @@
 
                 }
                 .article-mid{
-                    background: #41D395;
+                    background: $my-green;
                     height: 40px;
 
                 }

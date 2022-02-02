@@ -4,17 +4,17 @@ Dizainas: https://xd.adobe.com/spec/71297cf3-7ddc-40af-70c4-ce8fda78a719-0718/
 
 Reikalavimai:
 
-++Panaudoti SASS
+++Panaudoti SASS ++
 
-++Panaudoti partials (@include) //////@mixin vardas-mixino {} ir body {@include vardas-mixin}
+++Panaudoti partials ++ (@include) //////@mixin vardas-mixino {} ir body {@include vardas-mixin}
 
-++Panaudoti variables (CSS/SASS) !!!!!!!!!!!!!!!! $variableVardas: atrribute value; ir body {font-size: $variableVardas}
+++Panaudoti variables ++(CSS/SASS) !!!!!!!!!!!!!!!! $variableVardas: atrribute value; ir body {font-size: $variableVardas}
 
-++CSS suspaustas ir su vendor prefix’ais !!!!!!!!!!!!!!!!!!!!!! Atidaryta naršyklėje
+++CSS suspaustas ir su vendor prefix’ais ++ !!!!!!!!!!!!!!!!!!!!!! Atidaryta naršyklėje
 
-++Navigacijos juosta fiksuota viršuje position sticky arba fixed
+++Navigacijos juosta fiksuota viršuje position sticky arba fixed+++
 
-++Formų validacijos basic (neleisti submittinti tuščių formų, parodyti custom error message)
+++Formų validacijos+++ basic (neleisti submittinti tuščių formų, parodyti custom error message)
 
 ++Responsive dizaino implementcija (turi būti mobile)
 
@@ -22,12 +22,12 @@ JS
 
 ++Meniu link’ai nuscrollina iki sekcijos su animacija
 
-++Galerija (reviews sekcija) //////Swiper
+++Galerija (reviews sekcija) //////Swiper+++++
 
-++Tabs’ų keitimas (2 sekcija) //////Swiper
+++Tabs’ų keitimas (2 sekcija) //////Swiper+++++
 
 ++Mobile menu su burger’iu
 
-Viską įkelti į git ir github pages
+Viską įkelti į git ir github pages+++++
 
-Commit’inti visus pakeitimus !!!!!!!!!!!!!!!!!!!!!!!!!!!
+Commit’inti visus pakeitimus !!!!!!!!!!!!!!!!!!!!!!!!!!!+++++

@@ -3,7 +3,7 @@
     width: 100%;
 
     padding: 60px 0;
-
+    background-image: url("../../app/img/photo-1480714378408-67cf0d13bc1b@2x.jpg");
     @include bg-img-atr;
 
     &::before {
@@ -79,7 +79,7 @@
                 &:hover{
                     border-radius: 10px;
                     transform: scale(1.1);
-                    color: #E27866;
+                    color: $my-orange;
                 }
             }
         }
@@ -114,10 +114,10 @@
 
                 span {
                     text-transform: uppercase;
-                    color: #E27866;
+                    color: $my-orange;
 
                     &:hover{
-                        color: #41D395;
+                        color: $my-green;
                     }
                 }
             }
@@ -169,7 +169,7 @@
                     height: 16px;
 
                     margin-right: 3px;
-                    border: 1px solid #41D395;
+                    border: 1px solid $my-green;
                     border-radius: 100%;
 
                     &::before{
@@ -180,7 +180,7 @@
                         width: 14px;
                         transform: scale(0);
                         height: 14px;
-                        background: #41D395;
+                        background: $my-green;
                         border-radius: 100%;
 
                         transition: 0.2s;
@@ -190,6 +190,14 @@
                     &:checked::before{
                         transform: scale(0.6);
                     }
+                }
+
+                #monthly:checked ~ #monthly-label{
+                    font-weight: 600;
+                }
+
+                #yearly:checked ~ #yearly-label{
+                    font-weight: 600;
                 }
 
                 label {
@@ -208,7 +216,7 @@
                 font-size: 18px;
                 text-transform: uppercase;
                 border: none;
-                background: #41D395;
+                background: $my-green;
                 color: #FFFFFF;
 
                 transition: 0.3s;

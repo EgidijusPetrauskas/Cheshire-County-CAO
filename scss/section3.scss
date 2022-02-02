@@ -1,7 +1,7 @@
 .section-3{
     .swiper {
         position: relative;
-        width: 50%;
+        width: 83%;
         height: 100%;
 
         &:hover{
@@ -11,7 +11,10 @@
         .swiper-wrapper {
             .swiper-slide {
                 @include flex-prefix;
-                flex-direction: column;
+                justify-content: space-between;
+
+                margin-right: 0;
+                
                 h3 {
                     max-height: 110px;
                     color: #FFFFFF;
@@ -23,6 +26,60 @@
                     color: #FFFFFF;
                     @include font14-20;
                 }
+
+                .swiper-text{
+                    max-width: 57%
+                }
+
+                .section-3-imgs {
+                    @include flex-prefix;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    position: relative;
+                    height: 98%;
+                    width: 38%;
+
+                    .section-3-imgs-top{
+                        @include flex-prefix;
+
+                        margin: 0;
+                    }
+
+                    a{
+                        height: 168px;
+
+                        position: relative;
+                        display: inline-block;
+
+                        margin: 10px;
+
+                        transition: 0.3s;
+
+                        &::after{
+                            position: absolute;
+                            content: "Explore";
+                            color: #FFFFFF;
+                            text-align: center;
+                            line-height: 168px;
+                            font-size: 20px;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: #e2786686;
+                            opacity: 0;
+                        }
+
+                        &:hover{
+                                cursor: url("../../app/img/description-cursor-icon-with-shadow-32.png"), auto;
+                                transform: scale(1.1);
+                        }
+
+                        &:hover::after{
+                            opacity: 1;
+                        }
+                    }
+                }
             }
         }
     }
@@ -33,7 +90,7 @@
     height: 480px;
     position: relative;
     @include bg-img-atr;
-
+    background-image: url("../../app/img/christoffer-engstrom-503481-unsplash@2x.png");
     @include flex-prefix;
     align-items: center;
 
@@ -62,7 +119,6 @@
             position: relative;
 
             height: 100%;
-            margin-right: 45px;
 
             @include flex-prefix;
             flex-direction: column;
@@ -80,7 +136,8 @@
 
                 &:hover{
                     cursor: pointer;
-                    background: #E27866;
+                    background: $my-orange;
+                    border-radius: 6px;
 
                     transform: scale(1.1);
                 }
@@ -95,56 +152,6 @@
                     transform: rotate(315deg);
 
                     transition: 0.3s;
-                }
-            }
-        }
-
-        .section-3-imgs {
-            @include flex-prefix;
-            flex-direction: column;
-            align-items: flex-end;
-            position: relative;
-            height: 98%;
-            width: 38%;
-
-            .section-3-imgs-top{
-                @include flex-prefix;
-
-                margin: 0;
-            }
-
-            a{
-                height: 168px;
-
-                position: relative;
-                display: inline-block;
-
-                margin: 10px;
-
-                transition: 0.3s;
-
-                &::after{
-                    position: absolute;
-                    content: "Explore";
-                    color: #FFFFFF;
-                    text-align: center;
-                    line-height: 168px;
-                    font-size: 20px;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: #e2786686;
-                    opacity: 0;
-                }
-
-                &:hover{
-                        cursor: url(".././img/description-cursor-icon-with-shadow-32.png"), auto;
-                        transform: scale(1.1);
-                }
-
-                &:hover::after{
-                    opacity: 1;
                 }
             }
         }
