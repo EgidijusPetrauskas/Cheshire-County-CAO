@@ -109,9 +109,17 @@
                 background: #F5F5F5;
                 color: #333333;
 
+                &:hover{
+                    cursor: default;
+                }
+
                 span {
                     text-transform: uppercase;
                     color: #E27866;
+
+                    &:hover{
+                        color: #41D395;
+                    }
                 }
             }
 

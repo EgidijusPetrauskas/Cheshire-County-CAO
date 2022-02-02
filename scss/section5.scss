@@ -2,7 +2,7 @@
     height: 400px;
     width: 100%;
     
-    padding: 100px 0;
+    padding: 80px 0;
     .section-5-container {
         width: 100%;
 
@@ -14,7 +14,7 @@
         .section-5-top {
             text-align: center;
 
-            margin-bottom: 60px;
+            margin-bottom: 40px;
 
             h4{
                 font-size: 36px;
@@ -43,6 +43,12 @@
                 width: 33%;
 
                 text-align: center;
+
+                transition: 0.3s;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
 
                 i{
                     color: #E27866;

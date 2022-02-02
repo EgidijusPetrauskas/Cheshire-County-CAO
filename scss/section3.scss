@@ -80,6 +80,18 @@
                 background-position: center;
                 overflow: hidden;
 
+                transition: 0.3s;
+
+                &:hover{
+                    cursor: pointer;
+                    background: url("/app/img/tab_1_button_u83_selected.svg");
+                    background-size: 150% 150%;
+                    background-position: center;
+                    overflow: hidden;
+
+                    transform: scale(1.2);
+                }
+
                 span {
                     display: inline-block;
                     text-transform: uppercase;
@@ -88,15 +100,60 @@
                     -webkit-transform: rotate(315deg);
                     -ms-transform: rotate(315deg);
                     transform: rotate(315deg);
+
+                    transition: 0.3s;
                 }
             }
         }
 
         .section-3-imgs {
-            text-align: right;
+            @include flex-prefix;
+            flex-direction: column;
+            align-items: flex-end;
             position: relative;
             height: 98%;
             width: 38%;
+
+            .section-3-imgs-top{
+                @include flex-prefix;
+
+                margin: 0;
+            }
+
+            a{
+                height: 168px;
+
+                position: relative;
+                display: inline-block;
+
+                margin: 10px;
+
+                transition: 0.3s;
+
+                &::after{
+                    position: absolute;
+                    content: "Explore";
+                    color: #FFFFFF;
+                    text-align: center;
+                    line-height: 168px;
+                    font-size: 20px;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #e2786686;
+                    opacity: 0;
+                }
+
+                &:hover{
+                        cursor: url("/app/img/description-cursor-icon-with-shadow-32.png"), auto;
+                        transform: scale(1.1);
+                }
+
+                &:hover::after{
+                    opacity: 1;
+                }
+            }
         }
     }
 }

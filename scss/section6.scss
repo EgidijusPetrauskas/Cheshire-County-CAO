@@ -49,9 +49,28 @@
 
                 text-align: center;
 
+                &:hover .article-top{
+                    transform: translateY(0);
+                }
+
+                &:hover .article-top h2{
+                    color: #41D395;
+                }
+
+                &:hover .article-top p{
+                    opacity: 1;
+                }
+
+                &:hover .article-bottom p {
+                    color: #333333;
+                }
+
                 .article-top{
                     background: #333333;
                     border-radius: 5px 5px 0 0;
+
+                    transform: translateY(30px);
+                    transition: 0.3s;
 
                     p {
                         padding-top: 0;
@@ -73,6 +92,8 @@
                         line-height: 24px;
                         font-weight: normal;
 
+                        transition: 0.2s;
+
                         span{
                             font-size: 40px;
                         }
@@ -81,7 +102,7 @@
                 }
                 .article-mid{
                     background: #41D395;
-                    height: 8px;
+                    height: 40px;
 
                 }
                 .article-bottom{
@@ -91,6 +112,8 @@
                         color: #86878B;
                         font-size: 14px;
                         line-height: 24px;
+
+                        transition: 0.2s;
                     }
                 }
             }

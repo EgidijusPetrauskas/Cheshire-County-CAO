@@ -19,6 +19,12 @@
 
             img {
                 width: 65%;
+
+                transition: 0.3s;
+
+                &:hover{
+                    transform: scale(1.1)
+                }
             }
 
         }
@@ -57,6 +63,15 @@
                         margin-top: 25px;
                     }
 
+                    &:hover .icon i{
+                        color: #E27866;
+                        background: none;
+                    }
+
+                    &:hover .title-n-text h5 {
+                        border-bottom: 4px solid #E27866;
+                    }
+
                     .icon {
                         @include flex-prefix;
                         align-items: center;
@@ -72,18 +87,26 @@
                             text-align: center;
                             font-size: 22px;
                             margin-right: 20px;
-                            }
+
+                            transition: 0.2.5s;
+                        }
                     }
 
                     .title-n-text {
                         h5{
+                            display: inline-block;
+                            border-bottom: 4px solid #1C1C1C;
                             margin: 0;
                             font-size: 14px;
                             line-height: 17px;
+
+                            transition: 0.2.5s
                         }
 
                         p {
                             @include font14-20;
+
+                            margin-top: 5px;
                         }
                     }
                 }
