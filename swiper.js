@@ -18,5 +18,6 @@ const swiper2 = new Swiper('.swiper2', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },
 });

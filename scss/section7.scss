@@ -25,6 +25,17 @@
                 width: 950px;
                 height: 350px;
 
+                .swiper-pagination-bullet-active {
+                    background-color: #E27866 !important;
+                    border: 4px solid #E27866;
+                }
+
+                .swiper-pagination-bullet {
+                    border: 2px solid #E27866;
+                    background: #FFFF;
+                    margin-right: 10px;
+                }
+
                 .swiper-wrapper {
                     .swiper-slide{
                         flex-direction: row;

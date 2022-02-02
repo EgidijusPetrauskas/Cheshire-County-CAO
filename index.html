@@ -362,9 +362,12 @@
                 </div>
                 <div class="section-8-bottom">
                     <form action="#">
-                        <input type="text" placeholder="First name" required>
-                        <input type="text" placeholder="Last name" required>
-                        <input type="number" placeholder="Phone number" required>
+                        <input type="text" placeholder="First name" oninput="this.setCustomValidity('')"
+                            oninvalid="this.setCustomValidity('You Must Enter Your Name')" required>
+                        <input type="text" placeholder="Last name" oninput="this.setCustomValidity('')"
+                            oninvalid="this.setCustomValidity('You Must Enter Your Last Name')" required>
+                        <input type="number" placeholder="Phone number" oninput="this.setCustomValidity('')"
+                            oninvalid="this.setCustomValidity('You Must Enter Your Phone Number')" required>
                         <div class="radio-input">
                             <input type="radio" name="contact" id="personal" required>
                             <label for="personal" name="contact">PERSONAL</label>

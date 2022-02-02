@@ -1,7 +1,7 @@
 .section-8{
-    height: 500px;
+    height: 550px;
 
-    padding: 50px 0;
+    padding: 20px 0;
 
     background: #E27866;
 
@@ -61,16 +61,50 @@
                     align-items: center;
                     justify-content: flex-start;
 
-                    input{
-                        width: 20px;
-                        margin: 0px;
-                    }
+                    input[type="radio"] {                    
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+
+                        position: relative;
+
+                        width: 16px;
+                        height: 16px;
+
+                        margin: 0;
+                        margin-right: 3px;
+                        border: 1px solid #41D395;
+                        border-radius: 100%;
+
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            top: 0;
+                            left: 0;
+                            width: 14px;
+                            transform: scale(0);
+                            height: 14px;
+                            background: #41D395;
+                            border-radius: 100%;
+
+                            transition: 0.2s;
+
+                            }
+
+                            &:checked::before{
+                                transform: scale(0.6);
+                            }
+
+                            &:checked {
+                                opacity: 1;
+                            }
+                        }
 
                     label{
                         font-size: 10px;
                         line-height: 27px;
                         opacity: 0.5;
-                        margin-right: 4px;
+                        margin-right: 10px;
                     }
                 }
 
@@ -87,6 +121,14 @@
                     font-size: 15px;
                     line-height: 18px;
                     font-weight: 600;
+
+                    transition: 0.3s;
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                        transform: scaleX(1.1);
+                    }
                 }
             }
         }
