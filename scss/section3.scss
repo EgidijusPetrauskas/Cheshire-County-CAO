@@ -32,7 +32,6 @@
 .section-3 {
     height: 480px;
     position: relative;
-    background: url("/app/img/christoffer-engstrom-503481-unsplash@2x.png");
     @include bg-img-atr;
 
     @include flex-prefix;
@@ -75,21 +74,15 @@
 
                 border: none;
 
-                background: url("/app/img/tab_3_button_u87_mouseover.svg");
-                background-size: 150% 150%;
-                background-position: center;
-                overflow: hidden;
+                background: #A37169;
 
                 transition: 0.3s;
 
                 &:hover{
                     cursor: pointer;
-                    background: url("/app/img/tab_1_button_u83_selected.svg");
-                    background-size: 150% 150%;
-                    background-position: center;
-                    overflow: hidden;
+                    background: #E27866;
 
-                    transform: scale(1.2);
+                    transform: scale(1.1);
                 }
 
                 span {
@@ -146,7 +139,7 @@
                 }
 
                 &:hover{
-                        cursor: url("/app/img/description-cursor-icon-with-shadow-32.png"), auto;
+                        cursor: url("../../app/img/description-cursor-icon-with-shadow-32.png"), auto;
                         transform: scale(1.1);
                 }
 
