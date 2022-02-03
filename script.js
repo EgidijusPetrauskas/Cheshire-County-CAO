@@ -7,25 +7,25 @@ var logo = document.getElementById("nav-logo");
 function jumpTo(num){
     switch(num){
         case 1:
-            window.location.hash = "section-3"
+            document.getElementById("section-3").scrollIntoView({ behavior: "smooth", block: "start" });
             break;
         case 2:
-            window.location.hash = "section-4"
+            document.getElementById("section-4").scrollIntoView({ behavior: "smooth", block: "start"});
             break;
         case 3:
-            window.location.hash = "section-6"
+            document.getElementById("section-6").scrollIntoView({ behavior: "smooth", block: "start"});
             break;
         case 4:
-            window.location.hash = "section-7"
+            document.getElementById("section-7").scrollIntoView({ behavior: "smooth", block: "start"});
             break;
         case 5:
-            window.location.hash = "section-8"
+            document.getElementById("section-8").scrollIntoView({ behavior: "smooth", block: "start"});
             break;
     }
 }
 
 logo.addEventListener("click", () => {
-    window.location.hash = "da-top"
+    document.getElementById("da-top").scrollIntoView({ behavior: "smooth", block: "start"});
 });
 
 // SIDE MENU AND BURGER
