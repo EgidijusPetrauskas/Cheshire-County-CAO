@@ -1,27 +1,38 @@
+// TABLET
 @media (min-width: 800px) and (max-width: 1024px){
-    #section-1-h4{
-        font-size: 18px !important;
-        text-align: center !important;
-    }
+    // SECTION 3
     .swiper-buttons{
-        margin-right: 25px !important;
+        height: 85% !important;
+        margin-right: 15px !important;
 
         button{
-            transform: scale(0.9) !important;
+            width: 87px !important;
+            height: 87px !important;
         }
     }
     
     .swiper-text{
-        grid-gap: 26px !important;
-        align-self: flex-end !important;
+        grid-gap: 30px !important;
         h3{
-            line-height: 30px !important;
-            font-size: 26px !important;
+            line-height: 28px !important;
+            font-size: 25px !important;
+        }
+    }
+
+    // SECTION 6
+    .section-6 {
+        .section-6-bottom{
+            width: 87% !important;
+            article{
+                padding: 0 10px !important;
+            }
         }
     }
 }
-
+// ==================================================
+// MOBILE
 @media (max-width: 800px){
+    // NAV
     .navigation-links{
         .top-menu-button{
             display: none !important;
@@ -30,5 +41,185 @@
 
     #burger{
         display: block !important;
+    }
+
+    // SECTION 1
+    .section-1-container{
+        flex-direction: column;
+
+        article{
+            a{
+                margin: 0 auto;
+            }
+        }
+
+        form {
+            margin-top: 50px;
+        }
+    }
+
+    // SECTION 2
+    .section-2-container{
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+
+        height: 150px !important;
+
+        p{
+            max-width: 100% !important;
+        }
+        
+        .social-icons{
+            width: 90% !important;
+            justify-content: center !important;
+
+            margin-top: 8px;
+
+            a{
+                margin-left: 40px !important;
+            }
+            
+        }
+    }
+
+    // SECTION 3
+    .section-3{
+        height: 890px !important;
+        padding-bottom: 50px !important;
+
+
+        .swiper{
+            .swiper-slide{
+                flex-direction: column !important;
+                align-items: center !important;
+                justify-content: center !important;
+                .swiper-text{
+                    max-width: 100% !important;
+                    grid-template-rows: 1fr 1fr 60px !important;
+                    grid-gap: 5px !important;
+                }
+
+                .section-3-imgs{
+                    grid-template-columns: repeat(2, minmax(100px, 200px)) !important;
+                    grid-template-rows: repeat(2, minmax(100px, 200px)) !important;
+                    width: 100% !important;
+                    justify-content: center !important;
+                    margin-left: 0 !important;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .section-3-container{
+        height: 100% !important;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+
+        .swiper-buttons{
+            flex-direction: row !important;
+            height: 10% !important;
+            width: 87% !important;
+
+            margin-right: 0 !important;
+            margin-top: 30px !important;
+        }
+    }
+    // SECTION 4
+    .section-4{
+        .section-4-container{
+            flex-direction: column;
+            .section-4-img{
+                width: 100%;
+            }
+
+            .section-4-right{
+                flex-direction: column;
+                width: 100%;
+                .top{
+                    h4{
+                        text-align: center;
+                    }
+                    img{
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+    // SECTION 5
+    .section-5{
+        max-height: 1200px;
+        padding-top: 30px;
+
+        .section-5-container{
+            .section-5-top{
+                margin-bottom: 0;
+            }
+            .section-5-bottom{
+                flex-direction: column;
+                align-items: center;
+
+                div{
+                    width: 70%;
+
+                    margin-top: 20px;
+
+                    h5{
+                        margin: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+    // SECTION 6
+    .section-6{
+        max-height: 2000px;
+        .section-6-container{
+            .section-6-top{
+                margin-bottom: 5px;
+            }
+            
+            .section-6-bottom{
+                flex-direction: column;
+                align-items: center;
+
+                article{
+                    margin-top: 20px;
+                    min-width: 80%;
+                }
+            }
+        }
+    }
+    // Section 7
+    .section-7{
+        .swiper-slide{
+            @include flex-prefix;
+            justify-content: center !important;
+        }
+    }
+    // SECTION 8
+    .section-8{
+        form{
+            width: 280px !important;
+        }
+    }
+    // SECTION 9
+    .section-9{
+        .section-9-container{
+            flex-direction: column;
+            .social-icons{
+                width: 100%;
+
+                margin-top: 15px;
+
+                justify-content: center;
+                a{
+                    margin: 0 20px;
+                }
+            }
+        }
     }
 }

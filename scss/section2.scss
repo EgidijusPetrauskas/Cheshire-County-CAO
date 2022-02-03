@@ -45,12 +45,11 @@
                 &:hover img{
                     transform: scale(1.5) rotate(360deg);
                     cursor: pointer;
-                    
                 }
 
                 img{
                     height: 30px;
-
+                    
                     transition: 0.4s;
                 }
             }

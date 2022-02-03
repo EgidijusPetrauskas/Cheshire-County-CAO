@@ -37,7 +37,7 @@
                 .swiper-text{
                     max-width: 57%;
                     display: grid;
-                    grid-template-rows: repeat(3, minmax(30px, 100px));
+                    grid-template-rows: minmax(80px, 130px) minmax(60px, 90px) minmax(40px, 60px);
                     grid-gap: 20px;
                     align-items: center;
                 }
@@ -46,12 +46,12 @@
                     width: 50%;
 
                     display: grid;
-                    grid-template-columns: repeat(2, minmax(100px, 168px));
-                    grid-template-rows: repeat(2, minmax(100px, 168px));
+                    grid-template-columns: repeat(2, minmax(140px, 168px));
+                    grid-template-rows: repeat(2, minmax(100px, 155px));
                     grid-gap: 11px;
                     justify-content: flex-end;
 
-                    margin-left: 15px;
+                    margin-left: 10px;
 
                     .square{
                         position: relative;
@@ -102,7 +102,6 @@
                             opacity: 0;
 
                             transition: 0.3s;
-
                         }
 
                         &:hover{
@@ -154,7 +153,7 @@
 
             height: 90%;
 
-            margin-right: 40px;
+            margin-right: 30px;
 
             @include flex-prefix;
             flex-direction: column;
@@ -163,8 +162,6 @@
             button {
                 width: 100px;
                 height: 100px;
-
-                
 
                 border: none;
                 border-radius: 6px;

@@ -102,6 +102,7 @@
 
             h4 {
                 width: 100%;
+                text-align: center;
 
                 @include flex-prefix;
                 justify-content: center;
@@ -163,6 +164,7 @@
                 align-items: center;
 
                 height: 40px;
+                width: 80%;
                 margin: 0 50px;
                 margin-bottom: 40px;
 
