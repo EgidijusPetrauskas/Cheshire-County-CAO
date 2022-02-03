@@ -21,11 +21,13 @@
                     color: #FFFFFF;
                     font-size: 30px;
                     margin: 0;
+                    max-width: 580px;
                 }
 
                 p {
                     color: #FFFFFF;
                     @include font14-20;
+                    max-width: 600px;
 
                     margin: 0;
                     
@@ -49,7 +51,7 @@
                     grid-template-columns: repeat(2, minmax(140px, 168px));
                     grid-template-rows: repeat(2, minmax(100px, 155px));
                     grid-gap: 11px;
-                    justify-content: center;
+                    justify-content: flex-end;
 
                     margin-left: 10px;
 
@@ -153,13 +155,11 @@
 
             height: 90%;
 
-            margin-right: 30px;
+            margin-right: 60px;
 
             @include flex-prefix;
             flex-direction: column;
             justify-content: space-between;
-            
-            z-index: 4;
 
             button {
                 width: 100px;
@@ -171,7 +171,7 @@
                 background: #A37169;
 
                 transition: 0.3s;
-
+                
                 &:hover{
                     cursor: pointer;
                     background: $my-orange;

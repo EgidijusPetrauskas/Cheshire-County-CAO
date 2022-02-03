@@ -112,6 +112,7 @@
                 .section-3-imgs{
                     grid-template-columns: repeat(2, minmax(100px, 160px)) !important;
                     grid-template-rows: repeat(2, minmax(100px, 160px)) !important;
+                    justify-content: center !important;
 
                     width: 100% !important;
 
