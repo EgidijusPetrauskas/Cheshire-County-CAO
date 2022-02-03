@@ -49,7 +49,7 @@
                     grid-template-columns: repeat(2, minmax(140px, 168px));
                     grid-template-rows: repeat(2, minmax(100px, 155px));
                     grid-gap: 11px;
-                    justify-content: flex-end;
+                    justify-content: center;
 
                     margin-left: 10px;
 
@@ -144,7 +144,7 @@
         @include container;
         @include flex-prefix;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
 
         height: 80%;
 
@@ -158,6 +158,8 @@
             @include flex-prefix;
             flex-direction: column;
             justify-content: space-between;
+            
+            z-index: 4;
 
             button {
                 width: 100px;
