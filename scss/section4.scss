@@ -9,7 +9,6 @@
         @include container;
         @include flex-prefix;
     
-
         .section-4-img {
             width: 50%;
 
@@ -23,7 +22,7 @@
                 transition: 0.5s;
 
                 &:hover{
-                    transform: scale(1.1)
+                    -webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);
                 }
             }
 

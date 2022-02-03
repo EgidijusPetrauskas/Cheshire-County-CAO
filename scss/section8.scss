@@ -82,7 +82,7 @@
                             top: 0;
                             left: 0;
                             width: 14px;
-                            transform: scale(0);
+                            -webkit-transform: scale(0);-ms-transform: scale(0);transform: scale(0);
                             height: 14px;
                             background: $my-green;
                             border-radius: 100%;
@@ -92,7 +92,7 @@
                             }
 
                             &:checked::before{
-                                transform: scale(0.6);
+                                -webkit-transform: scale(0.6);-ms-transform: scale(0.6);transform: scale(0.6);
                             }
                         }
 
@@ -133,11 +133,10 @@
                     &:hover {
                         cursor: pointer;
                         text-decoration: underline;
-                        transform: scaleX(1.1);
+                        -webkit-transform: scaleX(1.1);-ms-transform: scaleX(1.1);transform: scaleX(1.1);
                     }
                 }
             }
         }
-
     }
 }

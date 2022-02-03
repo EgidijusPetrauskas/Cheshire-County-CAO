@@ -38,7 +38,7 @@
 
                 .swiper-text{
                     max-width: 57%;
-                    display: grid;
+                    display: -ms-grid; display: grid;
                     grid-template-rows: minmax(80px, 130px) minmax(60px, 90px) minmax(40px, 60px);
                     grid-gap: 20px;
                     align-items: center;
@@ -47,7 +47,7 @@
                 .section-3-imgs{
                     width: 50%;
 
-                    display: grid;
+                    display: -ms-grid; display: grid;
                     grid-template-columns: repeat(2, minmax(140px, 168px));
                     grid-template-rows: repeat(2, minmax(100px, 155px));
                     grid-gap: 11px;
@@ -64,7 +64,6 @@
                             background: url("../../app/img/cabage.png");
                             background-position: center;
                             background-size: 100% 100%;
-
                         }
 
                         &:nth-of-type(2){
@@ -177,7 +176,7 @@
                     background: $my-orange;
                     border-radius: 0;
 
-                    transform: scale(1.1);
+                    -webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);
                 }
 
                 span {
@@ -185,9 +184,7 @@
                     text-transform: uppercase;
                     color: #FFFFFF;
                     font-size: 14px;
-                    -webkit-transform: rotate(315deg);
-                    -ms-transform: rotate(315deg);
-                    transform: rotate(315deg);
+                    -webkit-transform: rotate(315deg); -ms-transform: rotate(315deg); transform: rotate(315deg);
 
                     transition: 0.3s;
                 }
