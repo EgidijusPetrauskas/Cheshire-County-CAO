@@ -1,5 +1,5 @@
 .section-7 {
-    height: 500px;
+    max-height: 700px;
 
     padding: 50px 0;
 
@@ -21,9 +21,11 @@
         }      
 
         .section-7-bottom{
+            @include flex-prefix;
+            
             .swiper{
-                width: 950px;
-                height: 350px;
+                max-width: 950px;
+                max-height: 400px;
 
                 .swiper-pagination-bullet-active {
                     background-color: $my-orange !important;

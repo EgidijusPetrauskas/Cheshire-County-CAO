@@ -28,6 +28,27 @@ logo.addEventListener("click", () => {
     window.location.hash = "da-top"
 });
 
+// SIDE MENU AND BURGER
+
+var burger = document.getElementById("burger");
+var sideMenu = document.getElementsByClassName("side-menu")[0];
+
+burger.addEventListener("click", function () {
+    sideMenu.classList.toggle("open");
+    for(var x of navButtons){
+        x.addEventListener("click", function(){
+            jumpTo();
+            sideMenu.classList.remove("open");
+        });
+    };
+});
+
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 800) {
+        sideMenu.classList.remove("open");
+    }
+});
+
 // SECTION 3
 
 var tabs = document.getElementsByClassName("swipe-button");
