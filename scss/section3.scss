@@ -180,6 +180,14 @@
                     -webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);
                 }
 
+                .active{
+                    cursor: pointer;
+                    background: $my-orange;
+                    border-radius: 0;
+
+                    -webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);
+                }
+
                 span {
                     display: inline-block;
                     text-transform: uppercase;
