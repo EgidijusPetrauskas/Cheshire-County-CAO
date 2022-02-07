@@ -119,6 +119,13 @@
     }
 }
 
+.active{
+    cursor: pointer;
+    background: $my-orange !important;
+    border-radius: 0;
+
+    -webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);
+}
 
 .section-3 {
     height: 500px;
@@ -173,14 +180,6 @@
                 transition: 0.3s;
                 
                 &:hover{
-                    cursor: pointer;
-                    background: $my-orange;
-                    border-radius: 0;
-
-                    -webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);
-                }
-
-                .active{
                     cursor: pointer;
                     background: $my-orange;
                     border-radius: 0;
